@@ -150,7 +150,11 @@ public class VehicleListAdapter extends RecyclerView.Adapter<VehicleListAdapter.
     /*Filtering data based on duration and fare*/
     public void refreshdata(List<InventoryModel.Inventory> inventory) {
         if (inventory != null && inventory.size() > 0) {
+
             this.inventories = inventory;
+
+            this.inventoryModel = inventoryModel;
+
             notifyDataSetChanged();
         }
 
